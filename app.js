@@ -16,6 +16,13 @@ const win_patterns = [
     [6, 7, 8],
 ];
 
+reset_game = ()=>
+{
+    turn = true;
+    enable_boxes();
+    msg_container.classList.add('hide');
+}
+
 boxes.forEach((box)=> {
 
     box.addEventListener('click', ()=> {
@@ -37,9 +44,23 @@ boxes.forEach((box)=> {
     })
 });
 
+const disable_boxes = ()=>{
+    for(let box of boxes){
+        box.disabled = true;
+    }
+}
+
+const enable_boxes = ()=>{
+    for(let box of boxes){
+        box.disabled = false;
+        box.innerText = "";
+    }
+}
+
 const showWinner =(winner)=>
 {
     msg.innerText = `Player ${winner} Wins!`;
+    disable_boxes();
     msg_container.classList.remove('hide');
 }
 
@@ -55,8 +76,12 @@ const checkWinner = ()=>{
 
         if(pos1Val != "" && pos2Val != "" && pos3Val != ""){
             if(pos1Val === pos2Val && pos2Val === pos3Val){
+
                 showWinner(pos1Val);
             }
         }
     }
 };
+
+new_game_btn.addEventListener('click', reset_game);
+reset_btn.addEventListener('click', reset_game);
