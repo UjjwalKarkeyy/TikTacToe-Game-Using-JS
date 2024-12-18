@@ -53,3 +53,12 @@ body
     color: #1C448E;
     border-radius: 7px;
 }
+
+#new-btn
+{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #DBFE87;
+    color: #1C448E;
+    border-radius: 7px;
+}
