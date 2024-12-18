@@ -21,6 +21,7 @@ reset_game = ()=>
 {
     turn = true;
     enable_boxes();
+    counter = 0;
     msg_container.classList.add('hide');
 }
 
