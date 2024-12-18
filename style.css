@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #FFE381;
+    text-align: center;
+
+    /* Color palattee: 
+        DBFE87
+        FFE381
+        CEC288
+        6F8695
+        1C448E
+    */
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box
+{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 7px;
+    box-shadow: 0 0 1rem rgb(0, 0, 0, 0.2);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8vmin;
+    color: #6F8695;
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #DBFE87;
+    color: #1C448E;
+    border-radius: 7px;
+
+}
