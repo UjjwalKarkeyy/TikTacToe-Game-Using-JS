@@ -43,6 +43,7 @@ body
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 8vmin;
     color: #6F8695;
+    background-color: #CEC288;
 }
 
 #reset-btn{
@@ -51,5 +52,4 @@ body
     background-color: #DBFE87;
     color: #1C448E;
     border-radius: 7px;
-
 }
