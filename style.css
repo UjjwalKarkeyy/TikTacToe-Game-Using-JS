@@ -62,3 +62,18 @@ body
     color: #1C448E;
     border-radius: 7px;
 }
+
+#msg
+{
+    color: #1C448E;
+    font-size: 5vmin;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.msg-container{
+    height: 30vmin;
+}
+
+.hide{
+    display: none;
+}
